@@ -7,6 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
 from pom.login_page import LoginPage
+from pom.new_customer import NewCustomer
 from utilities.read_properties import ReadProperties
 
 
@@ -37,7 +38,7 @@ from utilities.read_properties import ReadProperties
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="default name")
+    parser.addoption("--browser", action="store", default="chrome")
 
 @pytest.fixture(scope="session")
 def get_browser(pytestconfig):
@@ -71,3 +72,7 @@ def get_ReadProperties_class():
 @pytest.fixture
 def get_LoginPage_class(get_driver):
     return LoginPage(get_driver)
+
+@pytest.fixture
+def get_NewCustomer_class(get_driver):
+    return NewCustomer(get_driver)

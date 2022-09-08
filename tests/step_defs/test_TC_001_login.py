@@ -4,7 +4,7 @@ from pytest_bdd import scenario, given, when, then, parsers
 
 from utilities.logs import GetLogs
 
-logger = GetLogs.get_logs()
+logger = GetLogs.get_logs('login')
 
 #background
 @given('user goes on the login page')

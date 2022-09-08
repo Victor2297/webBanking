@@ -1,0 +1,7 @@
+DEBUG:root:The login page is opened
+DEBUG:root:The username field and password field is filled
+DEBUG:root:Clicked on the login button
+DEBUG:root:Clicked on the new customer  button
+DEBUG:root:All fields from new customer page are filled
+DEBUG:root:The data is submitted
+DEBUG:root:Test Passed
