@@ -7,6 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
 from pom.login_page import LoginPage
+from pom.new_account import NewAccount
 from pom.new_customer import NewCustomer
 from utilities.read_properties import ReadProperties
 
@@ -59,6 +60,7 @@ def setup(get_browser):
         return driver
     return get_browser
 
+
 ##########################################
 @pytest.fixture
 def get_driver(setup):
@@ -76,3 +78,19 @@ def get_LoginPage_class(get_driver):
 @pytest.fixture
 def get_NewCustomer_class(get_driver):
     return NewCustomer(get_driver)
+
+@pytest.fixture
+def get_NewAccount_class(get_driver):
+    return NewAccount(get_driver)
+
+def pytest_bdd_before_scenario(request, feature, scenario):
+    driver = request.getfixturevalue('get_driver')
+    read_properties = request.getfixturevalue('get_ReadProperties_class')
+    login_page = request.getfixturevalue('get_LoginPage_class')
+    #user goes to login page
+    driver.get(read_properties.get_login_page_url())
+    #logins on the page
+    login_page.fill_username('mngr435545')
+    login_page.fill_password('ugadAse')
+    login_page.click_login()
+

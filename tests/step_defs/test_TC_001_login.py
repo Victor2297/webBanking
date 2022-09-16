@@ -13,7 +13,7 @@ def user_goes_on_the_login_page(get_driver, get_ReadProperties_class):
     logger.debug('The login page is opened')
 
 #scenario Login_with_valid_data
-@scenario('../features/login.feature', 'Login_with_valid_data')
+@scenario('login.feature', 'Login_with_valid_data')
 def test_login_valid_data():
     pass
 
@@ -44,7 +44,7 @@ def user_sees_the_username_on_the_hello_page(get_LoginPage_class, username):
         logger.debug('Test Passed, the user sees the username')
         logger.debug('')
 
-@scenario('../features/login.feature', 'Login_with_invalid_data')
+@scenario('login.feature', 'Login_with_invalid_data')
 def test_login_invalid_data():
     pass
 

@@ -63,7 +63,7 @@ class BaseClass:
             try:
                 self.click_on_the_close_ad_button()
             except:
-                self.driver.switch_to.frame(BaseClass.ad_child_frame_id())
+                self.driver.switch_to.frame(BaseClass.ad_child_frame_id)
                 self.click_on_the_close_ad_button()
             print('Ads was displayed')
         else:

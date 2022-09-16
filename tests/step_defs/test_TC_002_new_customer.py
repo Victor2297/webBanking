@@ -6,23 +6,8 @@ from utilities.logs import GetLogs
 
 logger = GetLogs.get_logs('new_customer')
 
-#Background
-@given('user goes on the login page')
-def user_goes_on_the_login_page(get_driver, get_ReadProperties_class):
-    get_driver.get(get_ReadProperties_class.get_login_page_url())
-    logger.debug('The login page is opened')
-
-@given('logins on the page')
-def logins_on_the_page(get_LoginPage_class):
-    get_LoginPage_class.fill_username('mngr435545')
-    get_LoginPage_class.fill_password('ugadAse')
-    logger.debug('The username field and password field is filled')
-    get_LoginPage_class.click_login()
-    logger.debug('Clicked on the login button')
-
-
 #Create_new_customer
-@scenario('../features/new_customer.feature', 'Create_new_customer')
+@scenario('new_customer.feature', 'Create_new_customer')
 def test_new_customer():
     pass
 

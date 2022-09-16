@@ -1,0 +1,24 @@
+DEBUG:root:The login page is opened
+DEBUG:root:The username field is filled
+DEBUG:root:The password field is filled
+DEBUG:root:Clicked on the login page
+DEBUG:root:Test Passed, the user sees the username
+DEBUG:root:
+DEBUG:root:The login page is opened
+DEBUG:root:The username field is filled
+DEBUG:root:The password field is filled
+DEBUG:root:Clicked on the login page
+DEBUG:root:Test Passed, the user can not login with wrong username and password
+DEBUG:root:
+DEBUG:root:The login page is opened
+DEBUG:root:The username field is filled
+DEBUG:root:The password field is filled
+DEBUG:root:Clicked on the login page
+DEBUG:root:Test Passed, the user can not login with wrong username and password
+DEBUG:root:
+DEBUG:root:The login page is opened
+DEBUG:root:The username field is filled
+DEBUG:root:The password field is filled
+DEBUG:root:Clicked on the login page
+DEBUG:root:Test Passed, the user can not login with wrong username and password
+DEBUG:root:

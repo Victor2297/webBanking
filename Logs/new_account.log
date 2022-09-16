@@ -1,0 +1,4 @@
+DEBUG:root:The new account page is opened
+DEBUG:root:All fields from New Account page are filled
+DEBUG:root:The data are submitted
+DEBUG:root:Test Passed

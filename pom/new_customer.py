@@ -13,7 +13,7 @@ class NewCustomer(BaseClass):
     c_telephoneno_name = ReadProperties.get_c_telephoneno()
     c_email_name = ReadProperties.get_c_email()
     c_password_name = ReadProperties.get_password_input()
-    submit_button_name = ReadProperties.get_submit_button()
+    submit_button_name = ReadProperties.get_submit_button1()
 
     def __init__(self, driver):
         self.driver = driver
