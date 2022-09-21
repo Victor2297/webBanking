@@ -1,0 +1,4 @@
+DEBUG:root:the logo is clicked
+DEBUG:root:the url is right
+DEBUG:root:the hello message is the same
+DEBUG:root:Test passed

@@ -108,3 +108,12 @@ class ReadProperties:
     @staticmethod
     def get_current_amount_field():
         return conf.get('NewAccountSection', 'current_amount_field_xpath')
+
+    # GuruPageSection
+    @staticmethod
+    def get_guru_logo():
+        return conf.get('GuruPageSection', 'guru_logo_xpath')
+
+    @staticmethod
+    def get_guru_hello_message():
+        return conf.get('GuruPageSection', 'guru_hello_message_xpath')
