@@ -95,7 +95,6 @@ def pytest_bdd_before_scenario(request, feature, scenario):
     #user goes to login page
     driver.get(read_properties.get_login_page_url())
     #logins on the page
-    login_page.fill_username('mngr441747')
-    login_page.fill_password('EjUvErA')
+    login_page.fill_username('mngr443133')
+    login_page.fill_password('seqeqYq')
     login_page.click_login()
-

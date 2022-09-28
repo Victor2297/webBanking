@@ -117,3 +117,19 @@ class ReadProperties:
     @staticmethod
     def get_guru_hello_message():
         return conf.get('GuruPageSection', 'guru_hello_message_xpath')
+
+    @staticmethod
+    def get_search_field():
+        return conf.get('GuruPageSection', 'search_field_name')
+
+    @staticmethod
+    def get_search_button():
+        return conf.get('GuruPageSection', 'search_button_xpath')
+
+    @staticmethod
+    def get_result_window():
+        return conf.get('GuruPageSection', 'result_window_xpath')
+
+    @staticmethod
+    def get_results():
+        return conf.get('GuruPageSection', 'results_xpath')

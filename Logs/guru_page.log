@@ -2,3 +2,7 @@ DEBUG:root:the logo is clicked
 DEBUG:root:the url is right
 DEBUG:root:the hello message is the same
 DEBUG:root:Test passed
+DEBUG:root:The click is made on logo
+DEBUG:root:The search field is filled
+DEBUG:root:The search button is clicked
+DEBUG:root:Test Passed
