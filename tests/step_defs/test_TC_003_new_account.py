@@ -17,7 +17,7 @@ def user_clicks_on_the_new_account_button(get_NewAccount_class):
 
 @when('user fills all fields')
 def user_fills_all_fields(get_NewAccount_class):
-    get_NewAccount_class.fill_customer_id('57802')
+    get_NewAccount_class.fill_customer_id('98042')
     get_NewAccount_class.fill_initial_deposit('123422')
     logger.debug('All fields from New Account page are filled')
 

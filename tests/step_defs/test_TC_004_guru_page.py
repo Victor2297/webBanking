@@ -40,6 +40,7 @@ def test_guru_search_and_results():
 def click_on_guru_logo(get_GuruPage_class):
     get_GuruPage_class.click_on_logo_element()
     logger.debug('The click is made on logo')
+    get_GuruPage_class.close_ad()
 
 @when(parsers.parse('fill search field "{text_value}"'))
 def fill_search_field(get_GuruPage_class, text_value):
