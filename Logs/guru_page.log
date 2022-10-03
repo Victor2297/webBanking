@@ -1,6 +1,0 @@
-DEBUG:root:the logo is clicked
-DEBUG:root:Test failed, the data differ
-DEBUG:root:The click is made on logo
-DEBUG:root:The search field is filled
-DEBUG:root:The search button is clicked
-DEBUG:root:Test Passed

@@ -1,7 +1,7 @@
 import configparser
 
 conf = configparser.ConfigParser()
-conf.read('../web_banking\\Configurations\\config.ini')
+conf.read('../web_banking/Configurations/config.ini')
 
 
 class ReadProperties:
